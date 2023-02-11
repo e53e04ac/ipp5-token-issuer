@@ -17,12 +17,12 @@ graph RL;
     B_2(["e53e04ac/hold"]);
     B_3(["joi"]);
     B_4(["jsonwebtoken"]);
-    B_5(["e53e04ac/key-value-storage"]);
   end;
   subgraph "devDependencies";
-    B_6(["@types/async-lock"]);
-    B_7(["@types/jsonwebtoken"]);
-    B_8(["@types/node"]);
+    B_5(["@types/async-lock"]);
+    B_6(["@types/jsonwebtoken"]);
+    B_7(["@types/node"]);
+    B_8(["e53e04ac/key-value-storage"]);
   end;
   A --reference--> B_0;
   A --reference--> B_1;
@@ -34,14 +34,14 @@ graph RL;
   A --reference--> B_7;
   A --reference--> B_8;
   click B_0 "https://www.npmjs.org/package/async-lock/v/1.4.0";
-  click B_1 "https://github.com/e53e04ac/base/tree/86bc9dc951e32d7e173b8e7bf020b9439d75f8f7";
-  click B_2 "https://github.com/e53e04ac/hold/tree/385afd8049a499071f966af24caf970731543db4";
+  click B_1 "https://github.com/e53e04ac/base/tree/b4e091dbfeba0ea30c870ac7ac7877582e3fd4f0";
+  click B_2 "https://github.com/e53e04ac/hold/tree/2143f5f52192ae4156ea0af80d41c87c55355e9c";
   click B_3 "https://www.npmjs.org/package/joi/v/17.7.1";
   click B_4 "https://www.npmjs.org/package/jsonwebtoken/v/9.0.0";
-  click B_5 "https://github.com/e53e04ac/key-value-storage/tree/ae6f96e5d498ee7c655a091e18ee657176ce7088";
-  click B_6 "https://www.npmjs.org/package/@types/async-lock/v/1.4.0";
-  click B_7 "https://www.npmjs.org/package/@types/jsonwebtoken/v/9.0.1";
-  click B_8 "https://www.npmjs.org/package/@types/node/v/18.13.0";
+  click B_5 "https://www.npmjs.org/package/@types/async-lock/v/1.4.0";
+  click B_6 "https://www.npmjs.org/package/@types/jsonwebtoken/v/9.0.1";
+  click B_7 "https://www.npmjs.org/package/@types/node/v/18.13.0";
+  click B_8 "https://github.com/e53e04ac/key-value-storage/tree/17bb60fab4c6ab2949264d97b1a2d14b053c81a6";
 ~~~~~
 
 ~~~~~ mermaid
