@@ -10,7 +10,7 @@ import { Ipp5TokenIssuer } from 'e53e04ac/ipp5-token-issuer';
 
 ~~~~~ mermaid
 graph RL;
-  A(["e53e04ac/ipp5-token-issuer"]);
+  A(["package.json"]);
   subgraph "dependencies";
     B_0(["async-lock"]);
     B_1(["e53e04ac/base"]);
@@ -24,69 +24,82 @@ graph RL;
     B_7(["@types/node"]);
     B_8(["e53e04ac/key-value-storage"]);
   end;
-  A --reference--> B_0;
-  A --reference--> B_1;
-  A --reference--> B_2;
-  A --reference--> B_3;
-  A --reference--> B_4;
-  A --reference--> B_5;
-  A --reference--> B_6;
-  A --reference--> B_7;
-  A --reference--> B_8;
+  A ----> B_0;
+  A ----> B_1;
+  A ----> B_2;
+  A ----> B_3;
+  A ----> B_4;
+  A ----> B_5;
+  A ----> B_6;
+  A ----> B_7;
+  A ----> B_8;
   click B_0 "https://www.npmjs.org/package/async-lock/v/1.4.0";
-  click B_1 "https://github.com/e53e04ac/base/tree/b4e091dbfeba0ea30c870ac7ac7877582e3fd4f0";
-  click B_2 "https://github.com/e53e04ac/hold/tree/2143f5f52192ae4156ea0af80d41c87c55355e9c";
+  click B_1 "https://github.com/e53e04ac/base/tree/2dc903faf7859d755dd52f7fde706be5170b9a6f";
+  click B_2 "https://github.com/e53e04ac/hold/tree/285d028e225a7e75747417c3ed6b1ca0d5f52f6a";
   click B_3 "https://www.npmjs.org/package/joi/v/17.7.1";
   click B_4 "https://www.npmjs.org/package/jsonwebtoken/v/9.0.0";
   click B_5 "https://www.npmjs.org/package/@types/async-lock/v/1.4.0";
   click B_6 "https://www.npmjs.org/package/@types/jsonwebtoken/v/9.0.1";
   click B_7 "https://www.npmjs.org/package/@types/node/v/18.13.0";
-  click B_8 "https://github.com/e53e04ac/key-value-storage/tree/17bb60fab4c6ab2949264d97b1a2d14b053c81a6";
+  click B_8 "https://github.com/e53e04ac/key-value-storage/tree/aac96bb14624c4984234bd1f36dba5e21efc04e8";
 ~~~~~
 
 ~~~~~ mermaid
 graph LR;
-  subgraph "e53e04ac/ipp5-token-issuer"
-    C0("index.mjs");
-    C1("index.d.ts");
+  A(["index.mjs"])
+  subgraph "node:crypto";
+    B_0_0(["randomUUID"]);
+    B_0_1(["webcrypto"]);
   end;
-  subgraph "node:crypto"
-    D0(["randomUUID"]);
-    D1(["webcrypto"]);
+  subgraph "async-lock";
+    B_1_0(["default"]);
   end;
-  subgraph "async-lock"
-    D2(["default"]);
+  subgraph "joi";
+    B_2_0(["default"]);
   end;
-  subgraph "joi"
-    D3(["default"]);
+  subgraph "jsonwebtoken";
+    B_3_0(["default"]);
   end;
-  subgraph "jsonwebtoken"
-    D4(["default"]);
+  subgraph "base";
+    B_4_0(["Base"]);
   end;
-  subgraph "base"
-    D5(["Base"]);
+  subgraph "hold";
+    B_5_0(["hold"]);
+    B_5_1(["unwrap"]);
   end;
-  subgraph "hold"
-    D6(["hold"]);
-    D7(["unwrap"]);
-    D8(["Get"]);
-    D9(["ValueOrGet"]);
+  B_0_0 ----> A;
+  B_0_1 ----> A;
+  B_1_0 ----> A;
+  B_2_0 ----> A;
+  B_3_0 ----> A;
+  B_4_0 ----> A;
+  B_5_0 ----> A;
+  B_5_1 ----> A;
+~~~~~
+
+~~~~~ mermaid
+graph LR;
+  A(["index.d.ts"])
+  subgraph "async-lock";
+    B_0_0(["default"]);
   end;
-  subgraph "key-value-storage"
-    D10(["KeyValueStorage"]);
+  subgraph "joi";
+    B_1_0(["default"]);
   end;
-  D0 --import--> C0;
-  D1 --import--> C0;
-  D2 --import--> C0;
-  D3 --import--> C0;
-  D4 --import--> C0;
-  D5 --import--> C0;
-  D6 --import--> C0;
-  D7 --import--> C0;
-  D2 --import--> C1;
-  D3 --import--> C1;
-  D5 --import--> C1;
-  D8 --import--> C1;
-  D9 --import--> C1;
-  D10 --import--> C1;
+  subgraph "base";
+    B_2_0(["Base"]);
+  end;
+  subgraph "hold";
+    B_3_0(["Get"]);
+    B_3_1(["ValueOrGet"]);
+  end;
+  subgraph "key-value-storage";
+    B_4_0(["KeyValueStorage"]);
+  end;
+  B_0_0 ----> A;
+  B_1_0 ----> A;
+  B_2_0 ----> A;
+  B_3_0 ----> A;
+  B_3_1 ----> A;
+  B_4_0 ----> A;
 ~~~~~
