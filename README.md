@@ -5,7 +5,8 @@ npm install e53e04ac/ipp5-token-issuer
 ~~~~~
 
 ~~~~~ mjs
-import { Ipp5TokenIssuer } from 'e53e04ac/ipp5-token-issuer';
+import { type Ipp5TokenIssuer } from 'e53e04ac/ipp5-token-issuer';
+import { const Ipp5TokenIssuer } from 'e53e04ac/ipp5-token-issuer';
 ~~~~~
 
 ~~~~~ mermaid
@@ -34,72 +35,82 @@ graph RL;
   A ----> B_7;
   A ----> B_8;
   click B_0 "https://www.npmjs.org/package/async-lock/v/1.4.0";
-  click B_1 "https://github.com/e53e04ac/base/tree/2dc903faf7859d755dd52f7fde706be5170b9a6f";
-  click B_2 "https://github.com/e53e04ac/hold/tree/285d028e225a7e75747417c3ed6b1ca0d5f52f6a";
+  click B_1 "https://github.com/e53e04ac/base/tree/b45c2734e219419ebd59c99b026f593b813ba494";
+  click B_2 "https://github.com/e53e04ac/hold/tree/8fc3f6696d1c7ed6d184d90c5e33298cc9228991";
   click B_3 "https://www.npmjs.org/package/joi/v/17.7.1";
   click B_4 "https://www.npmjs.org/package/jsonwebtoken/v/9.0.0";
   click B_5 "https://www.npmjs.org/package/@types/async-lock/v/1.4.0";
   click B_6 "https://www.npmjs.org/package/@types/jsonwebtoken/v/9.0.1";
   click B_7 "https://www.npmjs.org/package/@types/node/v/18.13.0";
-  click B_8 "https://github.com/e53e04ac/key-value-storage/tree/aac96bb14624c4984234bd1f36dba5e21efc04e8";
+  click B_8 "https://github.com/e53e04ac/key-value-storage/tree/3ac1f2a26296911f456b9be263fb75a15b7fa9f7";
 ~~~~~
 
 ~~~~~ mermaid
-graph LR;
-  A(["index.mjs"])
+graph RL;
+  subgraph "e53e04ac/ipp5-token-issuer";
+    E_0(["Ipp5TokenIssuer"]);
+  end;
+  M(["index.mjs"])
   subgraph "node:crypto";
-    B_0_0(["randomUUID"]);
-    B_0_1(["webcrypto"]);
+    I_0_0(["randomUUID"]);
+    I_0_1(["webcrypto"]);
   end;
   subgraph "async-lock";
-    B_1_0(["default"]);
+    I_1_0(["default"]);
   end;
   subgraph "joi";
-    B_2_0(["default"]);
+    I_2_0(["default"]);
   end;
   subgraph "jsonwebtoken";
-    B_3_0(["default"]);
+    I_3_0(["default"]);
   end;
   subgraph "base";
-    B_4_0(["Base"]);
+    I_4_0(["Base"]);
   end;
   subgraph "hold";
-    B_5_0(["hold"]);
-    B_5_1(["unwrap"]);
+    I_5_0(["hold"]);
+    I_5_1(["unwrap"]);
   end;
-  B_0_0 ----> A;
-  B_0_1 ----> A;
-  B_1_0 ----> A;
-  B_2_0 ----> A;
-  B_3_0 ----> A;
-  B_4_0 ----> A;
-  B_5_0 ----> A;
-  B_5_1 ----> A;
+  M ----> I_0_0;
+  M ----> I_0_1;
+  M ----> I_1_0;
+  M ----> I_2_0;
+  M ----> I_3_0;
+  M ----> I_4_0;
+  M ----> I_5_0;
+  M ----> I_5_1;
+  E_0 ----> M;
 ~~~~~
 
 ~~~~~ mermaid
-graph LR;
-  A(["index.d.ts"])
+graph RL;
+  subgraph "e53e04ac/ipp5-token-issuer";
+    E_0(["type Ipp5TokenIssuer"]);
+    E_1(["const Ipp5TokenIssuer"]);
+  end;
+  M(["index.d.ts"])
   subgraph "async-lock";
-    B_0_0(["default"]);
+    I_0_0(["default"]);
   end;
   subgraph "joi";
-    B_1_0(["default"]);
+    I_1_0(["default"]);
   end;
   subgraph "base";
-    B_2_0(["Base"]);
+    I_2_0(["Base"]);
   end;
   subgraph "hold";
-    B_3_0(["Get"]);
-    B_3_1(["ValueOrGet"]);
+    I_3_0(["Get"]);
+    I_3_1(["ValueOrGet"]);
   end;
   subgraph "key-value-storage";
-    B_4_0(["KeyValueStorage"]);
+    I_4_0(["KeyValueStorage"]);
   end;
-  B_0_0 ----> A;
-  B_1_0 ----> A;
-  B_2_0 ----> A;
-  B_3_0 ----> A;
-  B_3_1 ----> A;
-  B_4_0 ----> A;
+  M ----> I_0_0;
+  M ----> I_1_0;
+  M ----> I_2_0;
+  M ----> I_3_0;
+  M ----> I_3_1;
+  M ----> I_4_0;
+  E_0 ----> M;
+  E_1 ----> M;
 ~~~~~
