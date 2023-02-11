@@ -5,8 +5,8 @@ npm install e53e04ac/ipp5-token-issuer
 ~~~~~
 
 ~~~~~ mjs
-import { type Ipp5TokenIssuer } from 'e53e04ac/ipp5-token-issuer';
-import { const Ipp5TokenIssuer } from 'e53e04ac/ipp5-token-issuer';
+import { Ipp5TokenIssuer } from 'e53e04ac/ipp5-token-issuer';
+import { Ipp5TokenIssuer } from 'e53e04ac/ipp5-token-issuer';
 ~~~~~
 
 ~~~~~ mermaid
@@ -35,8 +35,8 @@ graph RL;
   A ----> B_7;
   A ----> B_8;
   click B_0 "https://www.npmjs.org/package/async-lock/v/1.4.0";
-  click B_1 "https://github.com/e53e04ac/base/tree/b45c2734e219419ebd59c99b026f593b813ba494";
-  click B_2 "https://github.com/e53e04ac/hold/tree/8fc3f6696d1c7ed6d184d90c5e33298cc9228991";
+  click B_1 "https://github.com/e53e04ac/base/tree/679c11d468754731443595177472a78be2bb8fad";
+  click B_2 "https://github.com/e53e04ac/hold/tree/67e5b60f9bb3221f8b200107c13e89a604a93631";
   click B_3 "https://www.npmjs.org/package/joi/v/17.7.1";
   click B_4 "https://www.npmjs.org/package/jsonwebtoken/v/9.0.0";
   click B_5 "https://www.npmjs.org/package/@types/async-lock/v/1.4.0";
@@ -85,8 +85,8 @@ graph RL;
 ~~~~~ mermaid
 graph RL;
   subgraph "e53e04ac/ipp5-token-issuer";
-    E_0(["type Ipp5TokenIssuer"]);
-    E_1(["const Ipp5TokenIssuer"]);
+    E_0(["Ipp5TokenIssuer"]);
+    E_1(["Ipp5TokenIssuer"]);
   end;
   M(["index.d.ts"])
   subgraph "async-lock";
