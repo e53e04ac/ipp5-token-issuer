@@ -34,14 +34,14 @@ graph RL;
   A ----> B_7;
   A ----> B_8;
   click B_0 "https://www.npmjs.org/package/async-lock/v/1.4.0";
-  click B_1 "https://github.com/e53e04ac/base/tree/9b8c78be45949cb5921608b89e923828da6d41f3";
+  click B_1 "https://github.com/e53e04ac/base/tree/f060ddbd934ff5c9bfe1294358a91fb01051345a";
   click B_2 "https://github.com/e53e04ac/hold/tree/b0b5ef032800af76c6e7ae27472dbf25a04a947d";
   click B_3 "https://www.npmjs.org/package/joi/v/17.7.1";
   click B_4 "https://www.npmjs.org/package/jsonwebtoken/v/9.0.0";
   click B_5 "https://www.npmjs.org/package/@types/async-lock/v/1.4.0";
   click B_6 "https://www.npmjs.org/package/@types/jsonwebtoken/v/9.0.1";
   click B_7 "https://www.npmjs.org/package/@types/node/v/18.13.0";
-  click B_8 "https://github.com/e53e04ac/key-value-storage/tree/c2bcafe48da7bae07ade79b6df62e64e55aa2d20";
+  click B_8 "https://github.com/e53e04ac/key-value-storage/tree/6f3d303f3564856c1cfd534f86a274e787f1cd39";
 ~~~~~
 
 ~~~~~ mermaid
@@ -84,8 +84,9 @@ graph RL;
 ~~~~~ mermaid
 graph RL;
   subgraph "e53e04ac/ipp5-token-issuer";
-    E_0(["type Ipp5TokenIssuer"]);
-    E_1(["const Ipp5TokenIssuer"]);
+    E_0(["namespace Ipp5TokenIssuer"]);
+    E_1(["type Ipp5TokenIssuer"]);
+    E_2(["const Ipp5TokenIssuer"]);
   end;
   M(["index.d.ts"])
   subgraph "async-lock";
@@ -112,4 +113,5 @@ graph RL;
   M ----> I_4_0;
   E_0 ----> M;
   E_1 ----> M;
+  E_2 ----> M;
 ~~~~~
