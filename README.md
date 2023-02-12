@@ -41,7 +41,7 @@ graph RL;
   click B_5 "https://www.npmjs.org/package/@types/async-lock/v/1.4.0";
   click B_6 "https://www.npmjs.org/package/@types/jsonwebtoken/v/9.0.1";
   click B_7 "https://www.npmjs.org/package/@types/node/v/18.13.0";
-  click B_8 "https://github.com/e53e04ac/key-value-storage/tree/3384bf80f73026013c755d24cc0360870aea81c0";
+  click B_8 "https://github.com/e53e04ac/key-value-storage/tree/a100f8943f4cf6e42de17d6757f7880c48830b8e";
 ~~~~~
 
 ~~~~~ mermaid
