@@ -7,26 +7,12 @@
 import { default as AsyncLock } from 'async-lock';
 import { default as Joi } from 'joi';
 
-import { Base } from 'base';
+import { EventEmitter } from 'event-emitter';
 import { Get } from 'hold';
 import { ValueOrGet } from 'hold';
 import { KeyValueStorage } from 'key-value-storage';
 
 export declare namespace Ipp5TokenIssuer {
-
-    type Options = {
-        readonly idpRegisterUrn: ValueOrGet<string>;
-        readonly idpChallengeTokenUrn: ValueOrGet<string>;
-        readonly idpTokenUrn: ValueOrGet<string>;
-        readonly apiUrn: ValueOrGet<string>;
-        readonly idpRegisterPrivateKey: ValueOrGet<string>;
-        readonly idpRegisterPublicKey: ValueOrGet<string>;
-        readonly idpChallengeTokenPrivateKey: ValueOrGet<string>;
-        readonly idpChallengeTokenPublicKey: ValueOrGet<string>;
-        readonly idpTokenPrivateKey: ValueOrGet<string>;
-        readonly pendingItemStorage: ValueOrGet<KeyValueStorage<PendingItem>>;
-        readonly registeredItemStorage: ValueOrGet<KeyValueStorage<RegisteredItem>>;
-    };
 
     type RegisterChallengeTokenPayload = {
         readonly iss: string;
@@ -69,6 +55,22 @@ export declare namespace Ipp5TokenIssuer {
         readonly clientAgentTime: number;
         readonly clientAgentNonce: string;
     };
+
+    type Options = {
+        readonly idpRegisterUrn: ValueOrGet<string>;
+        readonly idpChallengeTokenUrn: ValueOrGet<string>;
+        readonly idpTokenUrn: ValueOrGet<string>;
+        readonly apiUrn: ValueOrGet<string>;
+        readonly idpRegisterPrivateKey: ValueOrGet<string>;
+        readonly idpRegisterPublicKey: ValueOrGet<string>;
+        readonly idpChallengeTokenPrivateKey: ValueOrGet<string>;
+        readonly idpChallengeTokenPublicKey: ValueOrGet<string>;
+        readonly idpTokenPrivateKey: ValueOrGet<string>;
+        readonly pendingItemStorage: ValueOrGet<KeyValueStorage<PendingItem>>;
+        readonly registeredItemStorage: ValueOrGet<KeyValueStorage<RegisteredItem>>;
+    };
+
+    type EventSpecs = Record<never, never>;
 
     type _Self = {
         readonly options: Get<Options>;
@@ -185,7 +187,7 @@ export declare namespace Ipp5TokenIssuer {
         readonly asyncLock: Get<AsyncLock>;
     };
 
-    type Self = Base & {
+    type Self = EventEmitter<EventSpecs> & {
         readonly _Ipp5TokenIssuer: Get<_Self>;
         readonly registerRequest: {
             (params: {

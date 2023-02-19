@@ -11,7 +11,7 @@ import { default as AsyncLock } from 'async-lock';
 import { default as Joi } from 'joi';
 import { default as jsonwebtoken } from 'jsonwebtoken';
 
-import { Base } from 'base';
+import { EventEmitter } from 'event-emitter';
 import { hold } from 'hold';
 import { unwrap } from 'hold';
 
@@ -307,7 +307,7 @@ const constructor = ((options) => {
 
     /** @type {import('.').Ipp5TokenIssuer.Self} */
     const self = ({
-        ...Base({}),
+        ...EventEmitter({}),
         _Ipp5TokenIssuer: (() => {
             return _self;
         }),
