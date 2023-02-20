@@ -36,7 +36,7 @@ graph RL;
   click B_0 "https://www.npmjs.com/package/async-lock/v/1.4.0";
   click B_1 "https://github.com/e53e04ac/event-emitter/tree/19614365368936f6974a633d25a1109a3465a99d";
   click B_2 "https://github.com/e53e04ac/hold/tree/3191dd4704f3e5f90d6c27f288ede7700f5fdb66";
-  click B_3 "https://www.npmjs.com/package/joi/v/17.7.1";
+  click B_3 "https://www.npmjs.com/package/joi/v/17.8.1";
   click B_4 "https://www.npmjs.com/package/jsonwebtoken/v/9.0.0";
   click B_5 "https://www.npmjs.com/package/@types/async-lock/v/1.4.0";
   click B_6 "https://www.npmjs.com/package/@types/jsonwebtoken/v/9.0.1";
