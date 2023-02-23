@@ -34,14 +34,14 @@ graph RL;
   A ----> B_7;
   A ----> B_8;
   click B_0 "https://www.npmjs.com/package/async-lock/v/1.4.0";
-  click B_1 "https://github.com/e53e04ac/event-emitter/tree/19614365368936f6974a633d25a1109a3465a99d";
-  click B_2 "https://github.com/e53e04ac/hold/tree/3191dd4704f3e5f90d6c27f288ede7700f5fdb66";
+  click B_1 "https://github.com/e53e04ac/event-emitter/tree/faf256d4d2350ffa0af1fed794236faa4f0740a1";
+  click B_2 "https://github.com/e53e04ac/hold/tree/443c2e801bbe20409c761994a91fa88fb6044602";
   click B_3 "https://www.npmjs.com/package/joi/v/17.8.3";
   click B_4 "https://www.npmjs.com/package/jsonwebtoken/v/9.0.0";
   click B_5 "https://www.npmjs.com/package/@types/async-lock/v/1.4.0";
   click B_6 "https://www.npmjs.com/package/@types/jsonwebtoken/v/9.0.1";
-  click B_7 "https://www.npmjs.com/package/@types/node/v/18.14.0";
-  click B_8 "https://github.com/e53e04ac/key-value-storage/tree/8d4bb85c8c087b8ba8621099cf6cbded974243fd";
+  click B_7 "https://www.npmjs.com/package/@types/node/v/18.14.1";
+  click B_8 "https://github.com/e53e04ac/key-value-storage/tree/f725cf303b26f6141a5a80d20e44900429ce02c4";
 ~~~~~
 
 ~~~~~ mermaid
