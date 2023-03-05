@@ -25,9 +25,9 @@ graph RL;
     B_8(["key-value-storage"]);
   end;
   subgraph "github";
-    C_1(["e53e04ac/event-emitter\n63f34d0c90cbecf2b424b38c0615e67fd7ba6594"]);
-    C_2(["e53e04ac/hold\n050a2db413598fe87670b5b6bd34b804776a3657"]);
-    C_8(["e53e04ac/key-value-storage\ndee421384a40ff07dd5f4ed9360feca90ce51034"]);
+    C_1(["e53e04ac/event-emitter\ndb90659b1c25a4e17e8a8dbf8920a630fd30321d"]);
+    C_2(["e53e04ac/hold\n472cfb85bada328cba9c6faddcf45b1241761027"]);
+    C_8(["e53e04ac/key-value-storage\n70120aaeba617634721f150fa2b20cd500468040"]);
   end;
   subgraph "npmjs";
     C_0(["async-lock\n1.4.0"]);
@@ -56,14 +56,14 @@ graph RL;
   B_7 ----> C_7;
   B_8 ----> C_8;
   click C_0 "https://www.npmjs.com/package/async-lock/v/1.4.0";
-  click C_1 "https://github.com/e53e04ac/event-emitter/tree/63f34d0c90cbecf2b424b38c0615e67fd7ba6594";
-  click C_2 "https://github.com/e53e04ac/hold/tree/050a2db413598fe87670b5b6bd34b804776a3657";
+  click C_1 "https://github.com/e53e04ac/event-emitter/tree/db90659b1c25a4e17e8a8dbf8920a630fd30321d";
+  click C_2 "https://github.com/e53e04ac/hold/tree/472cfb85bada328cba9c6faddcf45b1241761027";
   click C_3 "https://www.npmjs.com/package/joi/v/17.8.3";
   click C_4 "https://www.npmjs.com/package/jsonwebtoken/v/9.0.0";
   click C_5 "https://www.npmjs.com/package/@types/async-lock/v/1.4.0";
   click C_6 "https://www.npmjs.com/package/@types/jsonwebtoken/v/9.0.1";
   click C_7 "https://www.npmjs.com/package/@types/node/v/18.14.6";
-  click C_8 "https://github.com/e53e04ac/key-value-storage/tree/dee421384a40ff07dd5f4ed9360feca90ce51034";
+  click C_8 "https://github.com/e53e04ac/key-value-storage/tree/70120aaeba617634721f150fa2b20cd500468040";
 ~~~~~
 
 ~~~~~ mermaid
